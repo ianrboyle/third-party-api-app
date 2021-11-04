@@ -1,0 +1,2 @@
+POST http://localhost:3000/stocks.json
+Content-Type: application/json

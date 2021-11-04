@@ -15,6 +15,7 @@ class StocksController < ApplicationController
     request["x-api-key"] = ''
 
     response = http.request(request)
-    puts response.read_body
+    stock = response.read_body
+    render json: stock.as_json
   end
 end
